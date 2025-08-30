@@ -17,7 +17,7 @@ export default function About({}: Props) {
             <p className='text-s text-gray-400 justify-normal'>
 Backend developer with a focus on security and malware research. I spend a good amount of time reverse engineering, studying offensive techniques, and generally trying to understand how digital threats work.<br /><br />
 Most comfortable writing Go, Rust, Python, or Node.js, depending on what the problem calls for.<br /><br />
-When I'm not writing code or diving into cryptography concepts, you'll probably find me doodling random things or figuring out why some system is behaving weirdly.<br /></p>
+When I&apos;m not writing code or diving into cryptography concepts, you&apos;ll probably find me doodling random things or figuring out why some system is behaving weirdly.<br /></p>
             <SocialIcon 
                 url="https://github.com/Nightfire390" 
                 bgColor='transparent' 
