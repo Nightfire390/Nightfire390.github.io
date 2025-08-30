@@ -13,7 +13,7 @@ export default function Contact() {
       <div className="flex flex-col md:flex-row justify-between text-left gap-12">
         <div className="md:w-2/5 space-y-6">
           <h2 className="font-space_semibold text-3xl md:text-4xl">Get in Touch</h2>
-          <p className="text-[#c1c1c1]">Here are my details. Let's have a chat →</p>
+          <p className="text-[#c1c1c1]">Here are my details. Let&apos;s have a chat →</p>
            <SocialIcons />
         </div>
         <div className="w-px bg-muted md:block hidden"></div>
