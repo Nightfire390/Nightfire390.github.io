@@ -23,7 +23,7 @@ export default function Contact() {
             className="flex gap-4 items-center group"
           >
             <svg
-              className="w-12 h-12 text-black p-3 bg-[#577780] rounded-full group-hover:p-2.5 transition-all"
+              className="w-12 h-12 text-black p-3 bg-[#579580] rounded-full group-hover:p-2.5 transition-all"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -50,7 +50,7 @@ export default function Contact() {
           </Link>
           <div className="flex gap-4 items-center group">
             <svg
-              className="w-12 h-12 text-black p-3 bg-[#577780] rounded-full group-hover:p-2.5 transition-all"
+              className="w-12 h-12 text-black p-3 bg-[#579580] rounded-full group-hover:p-2.5 transition-all"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"

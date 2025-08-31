@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         "bruh-black": "#111",
         "bruh-white": "#e8e8e8",
-        "bruh-gray": "#577780",
+        "bruh-gray": "#578580",
       },
       backgroundImage: {
         "hero-bg": "url('/bg.jpg')",

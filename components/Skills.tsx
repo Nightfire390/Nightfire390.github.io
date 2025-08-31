@@ -18,7 +18,7 @@ export default function Skills({}: Props) {
           <div className="flex flex-row">
             <div className="border-r border-r-[#354545] font-space_light text-s text-gray-500 px-5 pt-3 mt-14 py-2 my-auto">
               <p className="justify-self-end">Languages</p>
-              [<span className="text-bruh-white text-s"> For Programming </span>]
+              [<span className="text-bruh-gray text-s"> For Programming </span>]
             </div>
             <div className="border-t border-t-[#354545] mt-16 px-2" />
           </div>
@@ -31,7 +31,7 @@ export default function Skills({}: Props) {
             <Skill imgUrl="./skills/ts.png" name="typescript" />
           </div>
         </div>
-        <div className="flex flex-row md:ml-48">
+        <div className="flex flex-row md:ml-52">
           <div className="grid grid-cols-3 md:grid-cols-6 gap-5 mt-10 px-10">
             <Skill imgUrl="./skills/mysql.png" name="SQL" />
             <Skill imgUrl="./skills/node.png" name="node.js" />
@@ -44,7 +44,7 @@ export default function Skills({}: Props) {
             <div className="border-t border-t-[#354545] mt-16 px-2 mx-0" />
             <div className="border-l border-l-[#354545] font-space_light text-s text-gray-500 px-5 pt-3 mt-14 py-2 my-auto">
               <p>Frameworks</p>
-              [<span className="text-bruh-white text-s"> For Development </span>]
+              [<span className="text-bruh-gray text-s"> For Development </span>]
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@ export default function Skills({}: Props) {
           <div className="flex flex-row">
             <div className="border-r border-r-[#354545] font-space_light text-s text-gray-500 px-5 pt-3 mt-14 py-2 my-auto">
               <p>Tools</p>
-              [<span className="text-bruh-white text-s"> For Security </span>]
+              [<span className="text-bruh-gray text-s"> For Security </span>]
             </div>
             <div className="border-t border-t-[#354545] mt-16 px-2 mx-0" />
           </div>
