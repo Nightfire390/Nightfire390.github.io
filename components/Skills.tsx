@@ -16,9 +16,9 @@ export default function Skills({}: Props) {
       <div className="flex flex-col">
         <div className="flex flex-row md:mr-44">
           <div className="flex flex-row">
-            <div className="border-r border-r-[#354545] font-space_light text-s text-gray-500 px-5 pt-3 mt-14 py-2 my-auto">
-              <p className="justify-self-end">Languages</p>
-              [<span className="text-bruh-gray text-s"> For Programming </span>]
+            <div className="border-r border-r-[#354545] font-space_light text-s text-gray-500 md:px-5 pl-5 pr-0  pt-3 mt-14 py-2 my-auto">
+              <p className="md:rotate-0 -rotate-90 min-w-20">Languages</p>
+              <span className="md:flex hidden">[<span className="text-bruh-gray text-s"> For Programming </span>]</span>
             </div>
             <div className="border-t border-t-[#354545] mt-16 px-2" />
           </div>
@@ -42,17 +42,17 @@ export default function Skills({}: Props) {
           </div>
           <div className="flex flex-row">
             <div className="border-t border-t-[#354545] mt-16 px-2 mx-0" />
-            <div className="border-l border-l-[#354545] font-space_light text-s text-gray-500 px-5 pt-3 mt-14 py-2 my-auto">
-              <p>Frameworks</p>
-              [<span className="text-bruh-gray text-s"> For Development </span>]
+            <div className="border-l border-l-[#354545] font-space_light text-s text-gray-500 md:px-5 pl-0 pr-5 pt-3 mt-14 py-2 my-auto">
+              <p className="md:rotate-0 rotate-90 min-w-20">Frameworks</p>
+              <span className="md:flex hidden">[<span className="text-bruh-gray text-s"> For Development </span>]</span>
             </div>
           </div>
         </div>
         <div className="flex flex-row md:ml-9">
           <div className="flex flex-row">
-            <div className="border-r border-r-[#354545] font-space_light text-s text-gray-500 px-5 pt-3 mt-14 py-2 my-auto">
-              <p>Tools</p>
-              [<span className="text-bruh-gray text-s"> For Security </span>]
+            <div className="border-r border-r-[#354545] font-space_light text-s text-gray-500 md:px-5 pl-5 pr-0 pt-3 mt-14 py-2 my-auto">
+              <p className="md:rotate-0 -rotate-90 min-w-20">Tools</p>
+              <span className="md:flex hidden">[<span className="text-bruh-gray text-s"> For Security </span>]</span>
             </div>
             <div className="border-t border-t-[#354545] mt-16 px-2 mx-0" />
           </div>

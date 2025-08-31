@@ -13,7 +13,7 @@ export default function About({}: Props) {
             ></div>
         <div
             className='space-y-5 px-0 md:px-10 text-gray-300'>
-            <h4 className='text-5xl font-bitcount text-bruh-white'># more &quot;<span className='underline decoration-bruh-gray tracking-wide'>Aaditya Kansal.md</span>&quot;</h4>
+            <h4 className='text-5xl font-bitcount text-bruh-white'># <span className='text-bruh-gray'>more </span> &quot;<span className='underline decoration-bruh-gray tracking-wide'>Aaditya Kansal.md</span>&quot;</h4>
             <p className='text-s text-gray-400 justify-normal'>
 Backend developer with a focus on security and malware research. I spend a good amount of time reverse engineering, studying offensive techniques, and generally trying to understand how digital threats work.<br /><br />
 Most comfortable writing Go, Rust, Python, or Node.js, depending on what the problem calls for.<br /><br />
