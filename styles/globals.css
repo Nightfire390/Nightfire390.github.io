@@ -10,27 +10,6 @@
     --accent: #5f8787;
 }
 
-@font-face {
-    font-family: "Bitcount";
-    src: url("/font/Bitcount-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Space";
-    src: url("/font/SpaceGrotesk-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Space-Light";
-    src: url("/font/SpaceGrotesk-Light.ttf");
-}
-
-@font-face {
-    font-family: "Space-Semibold";
-    src: url("/font/SpaceGrotesk-SemiBold.ttf");
-}
-
-
 ::-webkit-scrollbar {
     width: 8px;
 }

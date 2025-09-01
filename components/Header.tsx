@@ -1,14 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faGithub,
-  faDiscord,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import Link from "next/link";
 import { useLenis } from "@studio-freight/react-lenis";
 

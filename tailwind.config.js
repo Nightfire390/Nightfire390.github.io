@@ -20,10 +20,7 @@ module.exports = {
         400: "400%",
       },
       fontFamily: {
-        space: "Space, sans-serif",
-        space_light: "Space-Light, sans-serif",
-        space_semibold: "Space-Semibold, sans-serif",
-        bitcount: "Bitcount, sans-serif",
+        bitcount: "var(--font-bitcount), sans-serif",
       },
       keyframes: {
         scale: {
