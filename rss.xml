@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aaditya Kansal</title>
+    <link>https://aadityakansal.me</link>
+    <description>Blogs and notes</description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 May 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://aadityakansal.me/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Hello There!</title>
+      <link>http://aadityakansal.me/post.html?p=00-hello-there.md</link>
+      <description>The note marks the start of my blogs</description>
+      <pubDate>Mon, 19 May 2026 00:00:00 GMT</pubDate>
+      <guid>http://aadityakansal.me/post.html?p=00-hello-there.md</guid>
+    </item>
+
+  </channel>
+</rss>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpg" href="/media/N.jpg">
+  <title>Post</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Index</a>
+    <a href="blog.html" class="active">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="rss.xml" class="rss-link" title="RSS Feed">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 11a9 9 0 0 1 9 9"></path>
+            <path d="M4 4a16 16 0 0 1 16 16"></path>
+            <circle cx="5" cy="19" r="1"></circle>
+        </svg>
+    </a>
+  </nav>
+
+  <main>
+    <div id="post-mount">
+      <p class="muted">Loading…</p>
+    </div>
+  </main>
+
+  <footer>
+    <a href="contact.html">Contact</a>
+    <a href="rss.xml">RSS</a>
+    <span style="margin-left: auto;">&copy; <span id="yr"></span> Aaditya Kansal</span>
+  </footer>
+
+  <script src="md-parser.js"></script>
+  <script>
+    document.getElementById("yr").textContent = new Date().getFullYear();
+
+    async function loadPost() {
+      const mount = document.getElementById("post-mount");
+      const params = new URLSearchParams(window.location.search);
+      const file = params.get("p");
+
+      if (!file) {
+        mount.innerHTML = `<p class="muted">No post specified.</p>`;
+        return;
+      }
+
+      try {
+        const res = await fetch(`blog/${file}`);
+        if (!res.ok) throw new Error("Post not found");
+        const raw = await res.text();
+
+        const { meta, body } = MDParser.parseFrontMatter(raw);
+        const content = MDParser.parse(body);
+
+        if (meta.title) document.title = meta.title;
+
+        mount.innerHTML = `
+          <div class="post-header">
+            <h1>${meta.title || file}</h1>
+            <div class="post-meta">
+              ${meta.date ? `<span>${meta.date}</span>` : ""}
+              ${meta.tag  ? `<span>${meta.tag}</span>`  : ""}
+            </div>
+          </div>
+          <article class="post-content">${content}</article>
+        `;
+      } catch (e) {
+        mount.innerHTML = `<p class="muted">Could not load post: <code>${file}</code></p>`;
+      }
+    }
+
+    loadPost();
+  </script>
+</body>
+</html>

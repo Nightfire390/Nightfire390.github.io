@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpg" href="/media/N.jpg">
+  <title>Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Index</a>
+    <a href="blog.html" class="active">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="rss.xml" class="rss-link" title="RSS Feed">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 11a9 9 0 0 1 9 9"></path>
+            <path d="M4 4a16 16 0 0 1 16 16"></path>
+            <circle cx="5" cy="19" r="1"></circle>
+        </svg>
+    </a>
+  </nav>
+
+  <main>
+    <h1>Blog</h1>
+    <div id="posts-container">
+      <p class="muted">Loading posts…</p>
+    </div>
+  </main>
+
+  <footer>
+    <a href="contact.html">Contact</a>
+    <a href="rss.xml">RSS</a>
+    <span style="margin-left: auto;">&copy; <span id="yr"></span> Aaditya Kansal</span>
+  </footer>
+
+  <script>
+    document.getElementById("yr").textContent = new Date().getFullYear();
+
+    async function loadPosts() {
+      const container = document.getElementById("posts-container");
+      try {
+        const res = await fetch("posts.json");
+        if (!res.ok) throw new Error("posts.json not found");
+        const posts = await res.json();
+
+        // Sort newest first
+        posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        // Group by year
+        const byYear = {};
+        for (const post of posts) {
+          const year = post.date.slice(0, 4);
+          if (!byYear[year]) byYear[year] = [];
+          byYear[year].push(post);
+        }
+
+        const years = Object.keys(byYear).sort((a, b) => b - a);
+        let html = "";
+
+        for (const year of years) {
+          html += `<p class="year-heading">${year}</p>`;
+          html += `<ul class="post-list">`;
+          for (const post of byYear[year]) {
+            html += `
+              <li>
+                <span class="post-date">${post.date}</span>
+                <a href="post.html?p=${encodeURIComponent(post.file)}">${post.title}</a>
+                <span class="post-tag">${post.tag || ""}</span>
+              </li>`;
+          }
+          html += `</ul>`;
+        }
+
+        container.innerHTML = html;
+      } catch (e) {
+        container.innerHTML = `<p class="muted">No posts found. Add a <code>posts.json</code> to get started.</p>`;
+      }
+    }
+
+    loadPosts();
+  </script>
+</body>
+</html>
