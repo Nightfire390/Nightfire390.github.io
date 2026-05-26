@@ -4,5 +4,11 @@
     "date": "2026-05-19",
     "file": "00-hello-there.md",
     "tag": "note"
+  },
+  {
+    "title": "Obfuscation via Segmentation",
+    "date": "2026-05-26",
+    "file": "01-segmentation-obfuscation.md",
+    "tag": "note"
   }
 ]

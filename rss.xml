@@ -16,5 +16,13 @@
       <guid>http://aadityakansal.me/post.html?p=00-hello-there.md</guid>
     </item>
 
+    <item>
+      <title>Obfuscation via Segmentation</title>
+      <link>http://aadityakansal.me/post.html?p=01-segmentation-obfuscation.md</link>
+      <description>Trying to come up with obfuscation technique to reduce effectiveness of analysis</description>
+      <pubDate>Tue, 26 May 2026 00:00:00 GMT</pubDate>
+      <guid>http://aadityakansal.me/post.html?p=01-segmentation-obfuscation.md</guid>
+    </item>
+
   </channel>
 </rss>

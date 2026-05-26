@@ -67,7 +67,7 @@
               <li>
                 <span class="post-date">${post.date}</span>
                 <a href="post.html?p=${encodeURIComponent(post.file)}">${post.title}</a>
-                <span class="post-tag">${post.tag || ""}</span>
+                <span class="post-tag">${post.tag || "note"}</span>
               </li>`;
           }
           html += `</ul>`;

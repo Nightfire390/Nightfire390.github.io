@@ -5,7 +5,9 @@
   --bg:       #0e0e0e;
   --fg:       #d4d4d4;
   --accent:   #7aa2d4;
+  --accent-2: #977;
   --muted:    #777;
+  --mute-2:   #999;
   --border:   #222;
   --max:      780px;
   --mono:     "JetBrains Mono", "Fira Mono", "Courier New", monospace;
@@ -248,7 +250,7 @@ code {
   font-family: var(--mono);
   font-size: 0.82em;
   background: #1a1a1a;
-  color: #a8c7a0;
+  color: var(--accent);
   padding: 0.1em 0.35em;
   border-radius: 3px;
 }
@@ -265,7 +267,7 @@ pre {
 pre code {
   background: none;
   padding: 0;
-  color: #cdd6f4;
+  color: var(--mute-2);
   font-size: 0.82rem;
   line-height: 1.6;
 }
