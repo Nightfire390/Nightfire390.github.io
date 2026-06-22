@@ -10,5 +10,11 @@
     "date": "2026-05-26",
     "file": "01-segmentation-obfuscation.md",
     "tag": "note"
+  },
+  {
+    "title": "NAT and Hole Punching",
+    "date": "2026-06-22",
+    "file": "02-NAT.md",
+    "tag": "note"
   }
 ]

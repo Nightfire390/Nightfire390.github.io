@@ -20,8 +20,16 @@
       <title>Obfuscation via Segmentation</title>
       <link>http://aadityakansal.me/post.html?p=01-segmentation-obfuscation.md</link>
       <description>Trying to come up with obfuscation technique to reduce effectiveness of analysis</description>
-      <pubDate>Tue, 26 May 2026 00:00:00 GMT</pubDate>
+      <pubDate>Tue, 26 May 2026 08:39:00 GMT</pubDate>
       <guid>http://aadityakansal.me/post.html?p=01-segmentation-obfuscation.md</guid>
+    </item>
+
+    <item>
+      <title>NAT and Hole Punching</title>
+      <link>http://aadityakansal.me/post.html?p=02-NAT-and-hole-punching.md</link>
+      <description>NAT and how p2p communication works behind NAT by using hole punching</description>
+      <pubDate>Mon, 22 May 2026 06:22:00 GMT</pubDate>
+      <guid>http://aadityakansal.me/post.html?p=02-NAT-and-hole-punching.md</guid>
     </item>
 
   </channel>
