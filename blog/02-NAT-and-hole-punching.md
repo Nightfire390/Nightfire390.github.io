@@ -41,6 +41,6 @@ Carrier Grade NAT is a concept for ISPs. They implement NAT of their own to keep
 - **Endpoint-Dependent**: Same as Symmetric.
 
 **Note:**
-This changes things for port-forwarding, since now the double NAT (CGNAT over home network) means the router settings are pointless since the CGNAT is blocking inbound traffic. But, this also means, anyone within the same CGNAT can access the local service exposed via port forwarding behind home network's NAT as long as home router has unique IP behind CGNAT. So, if your communication is intra-carrier, port would be forwarded to the ip provided inside CGNAT and someone behind the same CGNAT can communicate with it.
+This changes things for port-forwarding, now the double NAT (CGNAT over home network) means the router settings are pointless because the CGNAT is blocking inbound traffic. But, this also means, anyone within the same CGNAT can access the local service exposed via port forwarding behind home network's NAT as long as home router has unique IP behind CGNAT. So, if your communication is intra-carrier, port would be forwarded to the ip provided inside CGNAT and someone behind the same CGNAT can communicate with it.
 
 Now, ISPs can block direct communication among devices behind CGNAT, which would, again, render port forwarding pointless. None of it, however, affects hole-punching though, since that mechanism would just work as though it was working for inter-carrier.
