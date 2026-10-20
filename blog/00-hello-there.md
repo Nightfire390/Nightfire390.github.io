@@ -2,6 +2,7 @@
 title: Introduction
 date: 2026-05-19
 tag: note
+description: The note marks the start of my blogs
 ---
 
 ## Hello there!

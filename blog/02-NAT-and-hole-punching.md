@@ -2,6 +2,7 @@
 title: NAT and Hole Punching
 date: 2026-06-22
 tag: note
+description: NAT and how p2p communication works behind NAT by using hole punching
 ---
 
 ## NAT and Hole Punching

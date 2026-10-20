@@ -2,6 +2,7 @@
 title: Obfuscation via Segmentation
 date: 2026-05-26
 tag: note
+description: Trying to come up with obfuscation technique to reduce effectiveness of analysis
 ---
 
 ## Segmentation

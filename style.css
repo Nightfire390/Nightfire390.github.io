@@ -372,3 +372,5 @@ footer a:hover { color: var(--accent); }
 }
 
 
+
+.post-content img, .post-content video { max-width: 100%; height: auto; }

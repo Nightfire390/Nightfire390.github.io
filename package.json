@@ -1,0 +1,12 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/build.mjs && npx --yes http-server _site -c-1"
+  },
+  "dependencies": {
+    "marked": "^15.0.0"
+  }
+}
