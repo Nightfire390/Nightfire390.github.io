@@ -5,7 +5,7 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import { marked } from "marked";
 
-const SITE_URL = (process.env.SITE_URL || "https://aadityakansal.me").replace(/\/$/, "");
+const SITE_URL = (process.env.SITE_URL || "https://nightfire390.github.io").replace(/\/$/, "");
 const SITE_NAME = "Aaditya Kansal";
 const AUTHOR = "Aaditya Kansal";
 const ROOT = process.cwd();
